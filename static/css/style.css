@@ -23,7 +23,7 @@
 .navigation nav {
   position: relative;
   padding: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family:  Arial, sans-serif;
 }
 .select-menu {
   display: none !important;
