@@ -20,7 +20,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         template_values = {
-            'greetings': "Добро пожаловать",
+            'greetings': u"Добро пожаловать",
         }
 
         template = JINJA_ENVIRONMENT.get_template('templates/index.html')
@@ -30,7 +30,7 @@ class MainHandler(webapp2.RequestHandler):
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
         template_values = {
-            'greetings': "Про нас",
+            'greetings': u"Про нас",
         }
 
         template = JINJA_ENVIRONMENT.get_template('templates/about.html')
@@ -40,17 +40,28 @@ class AboutHandler(webapp2.RequestHandler):
 class GalleryHandler(webapp2.RequestHandler):
     def get(self):
         template_values = {
-            'greetings': "Наша маленькая галерея",
+            'greetings': u"Наша маленькая галерея",
         }
 
         template = JINJA_ENVIRONMENT.get_template('templates/gallery.html')
         self.response.write(template.render(template_values))
 
 
+class ServicesHandler(webapp2.RequestHandler):
+    def get(self):
+        template_values = {
+            'greetings': u"Наши услуги",
+        }
+
+        template = JINJA_ENVIRONMENT.get_template('templates/services.html')
+        self.response.write(template.render(template_values))
+
+
+
 class ContactHandler(webapp2.RequestHandler):
     def get(self):
         template_values = {
-            'greetings': "Контакт",
+            'greetings': u"Контакт",
         }
 
         template = JINJA_ENVIRONMENT.get_template('templates/contacts.html')
@@ -62,4 +73,5 @@ app = webapp2.WSGIApplication([
     ('/about', AboutHandler),
     ('/gallery', GalleryHandler),
     ('/contacts', ContactHandler),
+    ('/services', ServicesHandler),
 ], debug=True)
