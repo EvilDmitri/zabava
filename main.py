@@ -69,9 +69,9 @@ class ContactHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/index', MainHandler),
-    ('/about', AboutHandler),
-    ('/gallery', GalleryHandler),
-    ('/contacts', ContactHandler),
-    ('/services', ServicesHandler),
+    ('/index.html', MainHandler),
+    ('/about.html', AboutHandler),
+    ('/gallery.html', GalleryHandler),
+    ('/contacts.html', ContactHandler),
+    ('/services.html', ServicesHandler),
 ], debug=True)
