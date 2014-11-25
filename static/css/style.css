@@ -1,5 +1,7 @@
 @import '../css/grid.css';
 @import '../css/font-awesome.css';
+@import "http://webfonts.ru/import/istok.css";
+@import "http://webfonts.ru/import/neucha.css";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:700);
@@ -113,7 +115,7 @@
 }
 .sf-menu li ul li a.sf-with-ul:after {
   content: '';
-  font-family: 'FontAwesome';
+  font-family: 'Istok Web';
   position: absolute;
   width: 5px;
   right: 15px;
@@ -270,7 +272,7 @@ h5,
 h6 {
   font-weight: normal;
   color: #d24ebb;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Neucha', sans-serif;
 }
 h2 {
   font-size: 72px;
@@ -360,7 +362,7 @@ a:hover {
   background-color: #d24ebb;
   color: #ffffff;
   display: inline-block;
-  font: 600 22px/36px 'Dosis', sans-serif;
+  font: 600 22px/36px 'Neucha', sans-serif;
   padding: 3px 60px 4px;
   margin-top: 24px;
   margin-bottom: 29px;
@@ -370,7 +372,7 @@ a:hover {
 }
 .link1 {
   display: inline-block;
-  font: 600 22px/34px 'Dosis', sans-serif;
+  font: 600 22px/34px 'Neucha', sans-serif;
 }
 /****classes****/
 .mb0 {
@@ -511,7 +513,7 @@ header h1 a {
   text-align: center;
 }
 .block1 .block1_title {
-  font: 33px/36px 'Dosis', sans-serif;
+  font: 33px/36px 'Neucha', sans-serif;
 }
 .block1 .block1_title span {
   display: block;
@@ -547,7 +549,7 @@ header h1 a {
   right: 0;
   top: 50%;
   margin-top: -43px;
-  font: 48px/36px 'Dosis', sans-serif;
+  font: 48px/36px 'Neucha', sans-serif;
 }
 .shuffle-me .info .shuffle_title span {
   padding-top: 22px;
